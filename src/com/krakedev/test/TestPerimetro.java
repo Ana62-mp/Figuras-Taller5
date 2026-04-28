@@ -1,6 +1,7 @@
 package com.krakedev.test;
 
 import com.krakedev.figuras.Cuadrado;
+import com.krakedev.figuras.Figura;
 import com.krakedev.figuras.Rectangulo;
 
 public class TestPerimetro {
@@ -16,6 +17,10 @@ public class TestPerimetro {
 		System.out.println(cuadrado.calcularPerimetro());
 		System.out.println("--Perimetro Rectangulo");
 		System.out.println(rectangulo.calcularPerimetro());
+		
+		Figura figura = new Figura("Figuras","Blanca");
+		//System.out.println(figura.calcularPerimetro());
+		
 	}
 
 }

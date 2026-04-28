@@ -5,4 +5,12 @@ public class Triangulo extends Figura {
 		super(nombre, color);
 	}
 	
+	@Override
+	public int calcularPerimetro() {
+		return 20;
+	}
+	@Override
+	public int calcularArea() {
+		return 10;
+	}
 }

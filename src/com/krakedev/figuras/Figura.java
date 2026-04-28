@@ -3,36 +3,43 @@ package com.krakedev.figuras;
 public class Figura {
 	private String nombre;
 	private String color;
-	
-	
-	//Constructores
+
+	// Constructores
 	public Figura(String nombre, String color) {
 		super();
 		this.nombre = nombre;
 		this.color = color;
 	}
-	
-	//GET Y SET
+
+	// GET Y SET
 	public String getNombre() {
 		return nombre;
 	}
+
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
+
 	public String getColor() {
 		return color;
 	}
+
 	public void setColor(String color) {
 		this.color = color;
 	}
-	
-	//METODOS
+
+	// METODOS
 	@Override
 	public String toString() {
 		return "Nombre=" + nombre + " ||| Color=" + color;
 	}
-	
-	
-	
-	
+
+	public int calcularPerimetro() {
+		return 0;
+	}
+
+	public double calcularArea() {
+		return 0;
+	}
+
 }

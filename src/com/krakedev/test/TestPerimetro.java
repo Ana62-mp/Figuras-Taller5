@@ -2,6 +2,7 @@ package com.krakedev.test;
 
 import com.krakedev.figuras.Cuadrado;
 import com.krakedev.figuras.Figura;
+import com.krakedev.figuras.Graficador;
 import com.krakedev.figuras.Rectangulo;
 
 public class TestPerimetro {
@@ -10,7 +11,7 @@ public class TestPerimetro {
 		// TODO Auto-generated method stub
 		Cuadrado cuadrado = new Cuadrado("Cuadrado","Rojo",10);
 		Rectangulo rectangulo = new Rectangulo("Rectangulo", "Rosa",10,20);
-		
+		Graficador graf = new Graficador();
 		
 		
 		System.out.println("--Perimetro Cuadrado");
@@ -19,7 +20,12 @@ public class TestPerimetro {
 		System.out.println(rectangulo.calcularPerimetro());
 		
 		Figura figura = new Figura("Figuras","Blanca");
-		//System.out.println(figura.calcularPerimetro());
+		System.out.println("--Perimetro Figura");
+		System.out.println(figura.calcularPerimetro());
+		
+		//POLIMORFISMO
+		graf.graficar(cuadrado);
+		graf.graficar(rectangulo);
 		
 	}
 
